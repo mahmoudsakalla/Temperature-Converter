@@ -1,3 +1,4 @@
+// mahmoud sakalla - temperature conversion program
 package main
 
 import "fmt"
@@ -7,7 +8,7 @@ func main() {
 	var temp float64
 
 	for {
-		//selection menu, asks the user from which unit they want to convert from
+		//selection menu asks the user from which unit they want to convert from
 		fmt.Println("Temperature Converter")
 		fmt.Println("1: Celsius to Fahrenheit")
 		fmt.Println("2: Fahrenheit to Celsius")
