@@ -1,4 +1,4 @@
-// mahmoud sakalla - temperature conversion program
+// mahmoud sakalla -- temperature conversion program
 package main
 
 import "fmt"
