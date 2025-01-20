@@ -16,21 +16,21 @@ func main() {
 
 		// The formulas to convert from celcius to fahrenheit and vice versa are standard
 		//the formulas can be found via google search, they are simple
-		// Process the choice
+		// loop to process the input of the user and ask for the temperature they wanna convert
 		if choice == 1 {
 			fmt.Print("Enter temperature in Celsius: ")
 			fmt.Scanln(&temp)
 			fahrenheit := (temp * 9 / 5) + 32
 			fmt.Printf("%.2f Celsius is %.2f Fahrenheit\n", temp, fahrenheit)
-			break // Exit the loop after a valid conversion
+			break
 		} else if choice == 2 {
 			fmt.Print("Enter temperature in Fahrenheit: ")
 			fmt.Scanln(&temp)
 			celsius := (temp - 32) * 5 / 9
 			fmt.Printf("%.2f Fahrenheit is %.2f Celsius\n", temp, celsius)
-			break // Exit the loop after a valid conversion
+			break
 		} else {
-			// Invalid choice; inform the user and re-prompt
+			// make sure that the choice is valid, between 1 and 2 only
 			fmt.Println("Invalid choice. please select 1 or 2 only.")
 			fmt.Println("Try again:")
 		}
